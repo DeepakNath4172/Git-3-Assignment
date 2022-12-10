@@ -1,13 +1,13 @@
 
-var n = 6;
-var i;
-var flag = true;
-for (i = 2; i < n; i++) 
-        flag = false;
-        break;
-    }
+let count=0;
+let num = 15;
+for(let i=2;i<=num;i++){
+
+  if(num%i==0){
+    count++;
+  }
 }
-if (flag) {
+if(count==1){
     console.log("It Is Prime Number");
 } else {
     console.log("It is not Prime Number");
@@ -15,17 +15,19 @@ if (flag) {
 
 
 // 2. Paliondrome String
-let str = "MADAM";
+let str = "ram";
 
-let len = str.length;
-for (let i = 0; i ; i++) {
-    if == str[len - 1 - i]) {
-        flag = false;
-    }
-
+let bag="";
+for(let i=0;i<str.length;i++){
+  bag+=str[i]
 }
-if (flag) {
-    console.log("Palindrome");
-} else {
-    console.log("Not Palindrome");
+
+let rev="";
+for(let j=str.length-1;j>=0;j--){
+  rev+=str[j]
+}
+if(bag==rev){
+  console.log("It is a palindrome")
+}else{
+  console.log("It is not a palindrome")
 }
